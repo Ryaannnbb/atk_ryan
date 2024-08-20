@@ -18,6 +18,10 @@ Route::get('/', function () {
     return view('beranda');
 });
 
+// Route::get('/test', function () {
+//     return view('databarangtest');
+// });
+
 Route::controller(BarangController::class)->prefix('barang')->group(function () {
     Route::get('','index')->name('barang');
     Route::post('store','store')->name('barang.store');
