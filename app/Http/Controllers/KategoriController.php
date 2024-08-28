@@ -2,12 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Barang;
 use App\Models\Kategori;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class BarangController extends Controller
+class KategoriController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +14,7 @@ class BarangController extends Controller
     public function index()
     {
         $kategori = Kategori::all();
-        $barang = Barang::all();
-        return view('barang.databarang', compact('barang', 'kategori'));
+        return view('kategori.index', compact('kategori'));
     }
 
     /**
@@ -32,9 +30,8 @@ class BarangController extends Controller
      */
     public function store(Request $request)
     {
-        // dd($request->all());
-        Barang::create($request->all());
-        return redirect()->route('barang')->with('success', 'Barang Berhasil Ditambah');
+        Kategori::create($request->all());
+        return redirect()->route('kategori')->with('Kategori Berhasil Ditambah');
     }
 
     /**
@@ -58,10 +55,7 @@ class BarangController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        // dd($request->all());
-        $barang = Barang::find($id);
-        $barang->update($request->all());
-        return redirect()->route('barang')->with("success", "Data Barang berhasil diperbarui.");
+
     }
 
     /**
@@ -69,12 +63,6 @@ class BarangController extends Controller
      */
     public function destroy(string $id)
     {
-        $barang = Barang::find($id);
-        if ($barang) {
-            Barang::destroy($id);
-            return redirect()->route('barang')->with('success', 'Barang berhasil dihapus.');
-        } else {
-            return redirect()->route('barang')->with('error', 'Barang tidak ditemukan.');
-        }
+        //
     }
 }

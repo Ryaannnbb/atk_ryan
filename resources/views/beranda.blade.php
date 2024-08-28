@@ -31,6 +31,9 @@
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="{{ route('barang') }}">Data Barang</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="{{ route('kategori') }}">Data Kategori</a>
+                    </li>
                 </ul>
             </div>
         </div>
