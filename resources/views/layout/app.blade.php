@@ -2140,96 +2140,6 @@
                             aria-haspopup="true" aria-expanded="false"><span
                                 class="uil fs-0 me-2" data-feather="list"></span>Kategori</a>
                     </li>
-                    <li class="navbar-nav"><a class="nav-link lh-1" href="#!"
-                            role="button"
-                            aria-haspopup="true" aria-expanded="false"><span
-                                class="uil fs-0 me-2 uil-puzzle-piece"></span>Modules</a>
-                    </li>
-                    <li class="navbar-nav"><a class="nav-link lh-1" href="#!"
-                            role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside"
-                            aria-haspopup="true" aria-expanded="false"><span
-                                class="uil fs-0 me-2 uil-document-layout-right"></span>Documentation</a>
-                        <ul class="dropdown-menu navbar-dropdown-caret">
-                            <li><a class="dropdown-item" href="../documentation/getting-started.html">
-                                    <div class="dropdown-item-wrapper"><span class="me-2 uil"
-                                            data-feather="life-buoy"></span>Getting started</div>
-                                </a></li>
-                            <li class="dropdown dropdown-inside"><a class="dropdown-item dropdown-toggle"
-                                    id="customization" href="#" data-bs-toggle="dropdown"
-                                    data-bs-auto-close="outside">
-                                    <div class="dropdown-item-wrapper"><span
-                                            class="uil fs-0 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span
-                                                class="me-2 uil" data-feather="settings"></span>Customization</span>
-                                    </div>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item"
-                                            href="../documentation/customization/configuration.html">
-                                            <div class="dropdown-item-wrapper"><span
-                                                    class="me-2 uil"></span>Configuration</div>
-                                        </a></li>
-                                    <li><a class="dropdown-item" href="../documentation/customization/styling.html">
-                                            <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Styling
-                                            </div>
-                                        </a></li>
-                                    <li><a class="dropdown-item"
-                                            href="../documentation/customization/dark-mode.html">
-                                            <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Dark
-                                                mode</div>
-                                        </a></li>
-                                    <li><a class="dropdown-item" href="../documentation/customization/plugin.html">
-                                            <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Plugin
-                                            </div>
-                                        </a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown dropdown-inside"><a class="dropdown-item dropdown-toggle"
-                                    id="layouts-doc" href="#" data-bs-toggle="dropdown"
-                                    data-bs-auto-close="outside">
-                                    <div class="dropdown-item-wrapper"><span
-                                            class="uil fs-0 uil-angle-right lh-1 dropdown-indicator-icon"></span><span><span
-                                                class="me-2 uil" data-feather="table"></span>Layouts doc</span>
-                                    </div>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item"
-                                            href="../documentation/layouts/vertical-navbar.html">
-                                            <div class="dropdown-item-wrapper"><span
-                                                    class="me-2 uil"></span>Vertical navbar</div>
-                                        </a></li>
-                                    <li><a class="dropdown-item"
-                                            href="../documentation/layouts/horizontal-navbar.html">
-                                            <div class="dropdown-item-wrapper"><span
-                                                    class="me-2 uil"></span>Horizontal navbar</div>
-                                        </a></li>
-                                    <li><a class="dropdown-item" href="../documentation/layouts/combo-navbar.html">
-                                            <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Combo
-                                                navbar</div>
-                                        </a></li>
-                                    <li><a class="dropdown-item" href="../documentation/layouts/dual-nav.html">
-                                            <div class="dropdown-item-wrapper"><span class="me-2 uil"></span>Dual
-                                                nav</div>
-                                        </a></li>
-                                </ul>
-                            </li>
-                            <li><a class="dropdown-item" href="../documentation/gulp.html">
-                                    <div class="dropdown-item-wrapper"><span
-                                            class="me-2 fa-brands fa-gulp ms-1 me-1 fa-lg"></span>Gulp</div>
-                                </a></li>
-                            <li><a class="dropdown-item" href="../documentation/design-file.html">
-                                    <div class="dropdown-item-wrapper"><span class="me-2 uil"
-                                            data-feather="figma"></span>Design file</div>
-                                </a></li>
-                            <li><a class="dropdown-item" href="../changelog.html">
-                                    <div class="dropdown-item-wrapper"><span class="me-2 uil"
-                                            data-feather="git-merge"></span>Changelog</div>
-                                </a></li>
-                            <li><a class="dropdown-item" href="../showcase.html">
-                                    <div class="dropdown-item-wrapper"><span class="me-2 uil"
-                                            data-feather="monitor"></span>Showcase</div>
-                                </a></li>
-                        </ul>
-                    </li>
                 </ul>
             </div>
             <ul class="navbar-nav navbar-nav-icons flex-row">
@@ -2465,7 +2375,7 @@
                         </div>
                     </div>
                 </li> --}}
-                <li class="nav-item dropdown">
+                {{-- <li class="nav-item dropdown">
                     <a class="nav-link" id="navbarDropdownNindeDots" href="#" role="button"
                         data-bs-toggle="dropdown" aria-haspopup="true" data-bs-auto-close="outside"
                         aria-expanded="false"><svg width="16" height="16" viewbox="0 0 16 16"
@@ -2573,8 +2483,8 @@
                             </div>
                         </div>
                     </div>
-                </li>
-                <li class="nav-item dropdown"><a class="nav-link lh-1 pe-0" id="navbarDropdownUser"
+                </li> --}}
+                {{-- <li class="nav-item dropdown"><a class="nav-link lh-1 pe-0" id="navbarDropdownUser"
                         href="#!" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside"
                         aria-haspopup="true" aria-expanded="false">
                         <div class="avatar avatar-l ">
@@ -2634,7 +2544,7 @@
                             </div>
                         </div>
                     </div>
-                </li>
+                </li> --}}
             </ul>
         </nav>
         <script>
@@ -2928,14 +2838,8 @@
 
             <footer class="footer position-absolute">
                 <div class="row g-0 justify-content-between align-items-center h-100">
-                    <div class="col-12 col-sm-auto text-center">
-                        <p class="mb-0 mt-2 mt-sm-0 text-900">Thank you for creating with Phoenix<span
-                                class="d-none d-sm-inline-block"></span><span
-                                class="d-none d-sm-inline-block mx-1">|</span><br class="d-sm-none" />2023 &copy;<a
-                                class="mx-1" href="https://themewagon.com/">Themewagon</a></p>
-                    </div>
-                    <div class="col-12 col-sm-auto text-center">
-                        <p class="mb-0 text-600">v1.13.0</p>
+                    <div class="col-12 text-center">
+                        <p class="mb-0 mt-2 mt-sm-0 text-900">Toko ATK Ryan - Solusi lengkap untuk kebutuhan kantor dan sekolah Anda.</p>
                     </div>
                 </div>
             </footer>

@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('barangs', function (Blueprint $table) {
             $table->id();
             $table->string('nama_barang', 100);
+            $table->string('kode_barang');
             $table->integer('harga');
             $table->integer('stok');
             $table->foreignId('kategori_id')->constrained('kategoris')->restrictOnDelete();

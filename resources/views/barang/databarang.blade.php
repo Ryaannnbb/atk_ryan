@@ -32,6 +32,11 @@
                                     placeholder="Masukkan nama barang" name="nama_barang">
                             </div>
                             <div class="mb-3">
+                                <label for="kodeBarang" class="form-label">Kode Barang</label>
+                                <input type="text" class="form-control" id="kodeBarang"
+                                    placeholder="Masukkan kode barang" name="kode_barang">
+                            </div>
+                            <div class="mb-3">
                                 <label for="kategoriBarang" class="form-label">Kategori</label>
                                 <select class="form-select form-select-sm"
                                 aria-label="Small select example" name="kategori_id">
@@ -72,6 +77,7 @@
                             <tr>
                                 <th scope="col">No</th>
                                 <th scope="col">Nama Barang</th>
+                                <th scope="col">Kode Barang</th>
                                 <th scope="col">Kategori</th>
                                 <th scope="col">Harga</th>
                                 <th scope="col">Stok</th>
@@ -83,6 +89,7 @@
                                 <tr>
                                     <th scope="row">{{ $loop->iteration }}</th>
                                     <td>{{ $barangs->nama_barang }}</td>
+                                    <td>{{ $barangs->kode_barang }}</td>
                                     <td>{{ $barangs->kategori->nama_kategori }}</td>
                                     <td>{{ 'Rp ' . number_format($barangs->harga, 0, ',', '.') }}</td>
                                     <td>{{ $barangs->stok }}</td>
@@ -124,6 +131,16 @@
                                                                         placeholder="Masukkan nama barang"
                                                                         value="{{ old('name', $barangs->nama_barang) }}"
                                                                         name="nama_barang">
+                                                                </div>
+                                                                <div class="mb-3">
+                                                                    <label for="editKodeBarang"
+                                                                        class="form-label">Kode
+                                                                        Barang</label>
+                                                                    <input type="text" class="form-control"
+                                                                        id="editKodeBarang"
+                                                                        placeholder="Masukkan kode barang"
+                                                                        value="{{ old('name', $barangs->kode_barang) }}"
+                                                                        name="kode_barang">
                                                                 </div>
                                                                 <div class="mb-3">
                                                                     <label for="editKategoriBarang"
