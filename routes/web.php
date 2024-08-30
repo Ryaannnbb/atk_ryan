@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BarangController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\KategoriController;
 
 /*
@@ -19,9 +20,10 @@ Route::get('/', function () {
     return view('beranda');
 });
 
-// Route::get('/test', function () {
-//     return view('databarangtest');
-// });
+//Route Dashboard
+Route::controller(DashboardController::class)->prefix('beranda')->group(function () {
+    Route::get('','index')->name('beranda');
+});
 
 // Route Barang
 Route::controller(BarangController::class)->prefix('barang')->group(function () {
