@@ -1,5 +1,7 @@
 @extends('layout.app')
 
+@section('title', 'Beranda')
+
 @section('main')
 
 <div class="container mt-5 flex-grow-1">

@@ -31,7 +31,7 @@ class KategoriController extends Controller
     public function store(Request $request)
     {
         Kategori::create($request->all());
-        return redirect()->route('kategori')->with('Kategori Berhasil Ditambah');
+        return redirect()->route('kategori')->with('success', 'Kategori Berhasil Ditambah');
     }
 
     /**
@@ -55,7 +55,9 @@ class KategoriController extends Controller
      */
     public function update(Request $request, string $id)
     {
-
+        $kategori = Kategori::find($id);
+        $kategori->update($request->all());
+        return redirect()->route('kategori')->with('success', 'Kategori Berhasil Diubah');
     }
 
     /**
@@ -63,6 +65,12 @@ class KategoriController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $kategori = Kategori::find($id);
+        try {
+            $kategori->delete();
+            return redirect()->route("kategori")->with("success", "Data kategori berhasil dihapus!");
+        } catch (\Throwable $th) {
+            return redirect()->route('kategori')->with("error", "Gagal menghapus karena data kategori sedang digunakan!");
+        }
     }
 }

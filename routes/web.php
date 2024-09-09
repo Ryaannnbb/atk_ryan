@@ -35,8 +35,8 @@ Route::controller(BarangController::class)->prefix('barang')->group(function () 
 
 // Route Kategori
 Route::controller(KategoriController::class)->prefix('kategori')->group(function () {
-    Route::get('','index')->name('kategori');
-    Route::post('store','store')->name('kategori.store');
-    Route::put('update{id}','update')->name('kategori.update');
-    Route::delete('destroy{id}','destroy')->name('kategori.destroy');
+    Route::get('', 'index')->name('kategori');
+    Route::post('store', 'store')->name('kategori.store');
+    Route::put('update/{id}', 'update')->name('kategori.update');
+    Route::delete('destroy/{id}', 'destroy')->name('kategori.destroy');
 });
